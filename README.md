@@ -38,7 +38,7 @@ ofVec3f simple(const int i, const float angleInRadians, const float spread)
 ![conical](img/2.png)
 
 ```cpp
-ofVec3f conical(const int i, const float angleInRadians,const float spread, const float extrude){
+ofVec3f conical(const int i, const float angleInRadians,const float spread, const float extrude)
 ```
 
 The parameters are the same as before, except
@@ -56,5 +56,5 @@ The following picture is taken from "inside the apple".
 ofVec3f apple(const int i, const float angleInRadians, const float spread, const int total)
 ```
 
-The parameter `total` passed as last argument to the method call indicates the total number of the element in the collection. 
+The parameter `total` indicates the total number of the element in the collection.
 
