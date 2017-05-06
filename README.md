@@ -10,10 +10,10 @@ It can be used to position the elements of a collection composed by 2D or 3D for
 float rad = ofDegToRad(137.5);
 float spread = 0.3;
 for(auto &c : children){
-		ofVec3f pos;
-		pos = ofxPhyllotaxis::simple(i, rad, spread);
-		c.setPosition(pos);
-		i++;
+  ofVec3f pos;
+  pos = ofxPhyllotaxis::simple(i, rad, spread);
+  c.setPosition(pos);
+  i++;
 }
 ```
 
@@ -43,11 +43,11 @@ ofVec3f conical(const int i, const float angleInRadians,const float spread, cons
 
 The parameters are the same as before, except
 
-`extrude` it defines how much the elements should be pushed on the `y` axis
+`extrude` defines how much the elements should be pushed on the `y` axis
 
 ## Apple
 
-This method is called like this because it remember a bit an apple. I did not find any better name, feel free to give me suggestions ;).
+I did not find any better name, feel free to give me suggestions.
 The following picture is taken from "inside the apple".
 
 ![apple](img/3.png)
