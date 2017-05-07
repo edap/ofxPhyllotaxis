@@ -1,7 +1,7 @@
 # ofxPhyllotaxis
 
 [![Build status](https://travis-ci.org/edap/ofxPhyllotaxis.svg?branch=master)](https://travis-ci.org/edap/ofxPhyllotaxis)
-[![Build status](https://ci.appveyor.com/api/projects/status/etxh1ocwr7nbcf84?svg=true)](https://ci.appveyor.com/project/edap/ofxphyllotaxis)
+[![Build status](https://ci.appveyor.com/api/projects/status/o55dw650w0mwohtk?svg=true)](https://ci.appveyor.com/project/edap/ofxphyllotaxis)
 
 This addons simply consists of three static methods that implements a model that describes the arrangement of leaves on a plant stem, called <a href="https://en.wikipedia.org/wiki/Phyllotaxis">phyllotaxis</a>.
 
