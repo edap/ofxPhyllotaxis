@@ -1,5 +1,5 @@
 #pragma once
-#include "ofMain.h"
+#include "math/ofVec3f.h"
 
 class ofxPhyllotaxis{
     public:
