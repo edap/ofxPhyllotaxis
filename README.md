@@ -8,7 +8,7 @@ It can be used to position the elements of a collection composed by 2D or 3D for
 
 ```cpp
 // initialize a collection
-children vector<ofBoxPrimitives>
+children vector<ofBoxPrimitives>;
 int nCubes = 400;
 for (int i = 0;  i < nCubes; i++) {
     children.push_back(ofBoxPrimitive(5,5,5));
