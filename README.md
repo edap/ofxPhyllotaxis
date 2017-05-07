@@ -5,7 +5,6 @@
 
 This addons simply consists of three static methods that implements a model that describes the arrangement of leaves on a plant stem, called <a href="https://en.wikipedia.org/wiki/Phyllotaxis">phyllotaxis</a>.
 
-
 ## Usage
 It can be used to position the elements of a collection composed by 2D or 3D forms. For example, assuming you have a bunch of `ofBoxPrimitive` in a vector, it can be used in a loop like this:
 
