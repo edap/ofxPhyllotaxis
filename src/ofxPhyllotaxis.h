@@ -2,25 +2,25 @@
 #include "ofMain.h"
 
 class ofxPhyllotaxis{
-public:
-	 static ofVec3f simple(const int i, const float angleInRadians,
-                         const float spread){
-       float currentAngle = i * angleInRadians;
-       float radius = spread * sqrt(i);
-       float x = radius * cos(currentAngle);
-       float z = radius * sin(currentAngle);
-       return ofVec3f(x,0.0,z);
-	 }
+    public:
+    static ofVec3f simple(const int i, const float angleInRadians,
+                          const float spread){
+        float currentAngle = i * angleInRadians;
+        float radius = spread * sqrt(i);
+        float x = radius * cos(currentAngle);
+        float z = radius * sin(currentAngle);
+        return ofVec3f(x,0.0,z);
+    }
 
-	  static ofVec3f conical(const int i, const float angleInRadians,
+    static ofVec3f conical(const int i, const float angleInRadians,
                            const float spread, const float extrude){
-         float currentAngle = i * angleInRadians;
-         float radius = spread * sqrt(i);
-         float x = radius * cos(currentAngle);
-         float z = radius * sin(currentAngle);
-         float y = i * (extrude) * -1;
-         return ofVec3f(x,y,z);
-	  }
+        float currentAngle = i * angleInRadians;
+        float radius = spread * sqrt(i);
+        float x = radius * cos(currentAngle);
+        float z = radius * sin(currentAngle);
+        float y = i * (extrude) * -1;
+        return ofVec3f(x,y,z);
+    }
 
     static ofVec3f apple(const int i, const float angleInRadians,
                          const float spread, const int total){
