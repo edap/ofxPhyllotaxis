@@ -7,13 +7,20 @@ This addons simply consists of three static methods that implements a model that
 It can be used to position the elements of a collection composed by 2D or 3D forms. For example, assuming you have a bunch of `ofBoxPrimitive` in a vector, it can be used in a loop like this:
 
 ```cpp
+// initialize a collection
+children vector<ofBoxPrimitives>
+int nCubes = 400;
+for(int i = 0;  i < nCubes;i++){
+		children.push_back(ofBoxPrimitive(5,5,5));
+}
+
+// iterate and position items
 float rad = ofDegToRad(137.5);
 float spread = 0.3;
-for(auto &c : children){
+for (int i = 0;  i < nCubes; i++) {
   ofVec3f pos;
   pos = ofxPhyllotaxis::simple(i, rad, spread);
-  c.setPosition(pos);
-  i++;
+  children[i].setPosition(pos);
 }
 ```
 

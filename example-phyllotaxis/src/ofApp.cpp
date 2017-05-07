@@ -20,9 +20,8 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    int i = 0;
     float rad = ofDegToRad(degree);
-    for(auto &c : children){
+    for (int i = 0;  i < nCubes;i++) {
         ofVec3f pos;
         if (selectedType == "simple") {
             pos = ofxPhyllotaxis::simple(i, rad, spread);
@@ -35,9 +34,7 @@ void ofApp::update(){
         if (selectedType == "apple") {
             pos = ofxPhyllotaxis::apple(i, rad, spread, nCubes);
         }
-        c.setPosition(pos);
-
-        i++;
+        children[i].setPosition(pos);
     }
 }
 
@@ -46,18 +43,15 @@ void ofApp::draw(){
     maybeDrawGui();
     camera.begin();
 
-    int i = 0;
     secondMaterial.setEmissiveColor(masterColor);
-    for(auto c : children){
+    for (int i = 0;  i < nCubes;i++) {
         float lerp = ofMap(i, 0, nCubes, 0.0, 1.0);
         auto interpolatedColor = masterColor.getLerped(secondColor, lerp);
         secondMaterial.setEmissiveColor(interpolatedColor);
         secondMaterial.begin();
-        c.draw();
+        children[i].draw();
         secondMaterial.end();
-        i++;
     }
-
     camera.end();
 }
 
