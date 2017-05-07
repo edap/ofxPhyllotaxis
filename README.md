@@ -11,16 +11,16 @@ It can be used to position the elements of a collection composed by 2D or 3D for
 children vector<ofBoxPrimitives>
 int nCubes = 400;
 for(int i = 0;  i < nCubes;i++){
-		children.push_back(ofBoxPrimitive(5,5,5));
+    children.push_back(ofBoxPrimitive(5,5,5));
 }
 
 // iterate and position items
 float rad = ofDegToRad(137.5);
 float spread = 0.3;
 for (int i = 0;  i < nCubes; i++) {
-  ofVec3f pos;
-  pos = ofxPhyllotaxis::simple(i, rad, spread);
-  children[i].setPosition(pos);
+    ofVec3f pos;
+    pos = ofxPhyllotaxis::simple(i, rad, spread);
+    children[i].setPosition(pos);
 }
 ```
 
