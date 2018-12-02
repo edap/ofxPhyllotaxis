@@ -22,7 +22,7 @@ void ofApp::setup(){
 void ofApp::update(){
     float rad = ofDegToRad(degree);
     for (int i = 0;  i < nCubes;i++) {
-        ofVec3f pos;
+        glm::vec3 pos;
         if (selectedType == "simple") {
             pos = ofxPhyllotaxis::simple(i, rad, spread);
         }
