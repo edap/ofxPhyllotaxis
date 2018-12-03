@@ -20,7 +20,7 @@ for (int i = 0;  i < nCubes; i++) {
 float rad = ofDegToRad(137.5);
 float spread = 0.3;
 for (int i = 0;  i < nCubes; i++) {
-    ofVec3f pos;
+    glm::vec3 pos;
     pos = ofxPhyllotaxis::simple(i, rad, spread);
     children[i].setPosition(pos);
 }
@@ -33,7 +33,7 @@ In the example application, it is used in a 3D scene. It provides 3 methods slig
 ![simple](img/1.png)
 
 ```cpp
-ofVec3f simple(const int i, const float angleInRadians, const float spread)
+glm::vec3 simple(const int i, const float angleInRadians, const float spread)
 ```
 
 `i` is the current index in the iteration
@@ -47,7 +47,7 @@ ofVec3f simple(const int i, const float angleInRadians, const float spread)
 ![conical](img/2.png)
 
 ```cpp
-ofVec3f conical(const int i, const float angleInRadians,const float spread, const float extrude)
+glm::vec3 conical(const int i, const float angleInRadians,const float spread, const float extrude)
 ```
 
 The parameters are the same as before, except
@@ -62,7 +62,7 @@ The following picture is taken from "inside the apple".
 ![apple](img/3.png)
 
 ```cpp
-ofVec3f apple(const int i, const float angleInRadians, const float spread, const int total)
+glm::vec3 apple(const int i, const float angleInRadians, const float spread, const int total)
 ```
 
 The parameter `total` indicates the total number of the element in the collection.
